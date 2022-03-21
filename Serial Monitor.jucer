@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="szvLOc" name="Serial Monitor" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1" displaySplashScreen="1">
+  <MAINGROUP id="vXEnJB" name="Serial Monitor">
+    <GROUP id="{55169E14-8310-3C46-6000-10CC1E6630B0}" name="Source">
+      <FILE id="RbUXq1" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="AasQRb" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="YOkswj" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <GROUP id="{08F6BEE9-6CB1-9895-F4DB-13978CE5CF09}" name="usb">
+        <GROUP id="{45437E76-964D-26EF-40B3-104A8B3D92FA}" name="com">
+          <GROUP id="{88D97E05-B6C1-0280-6281-C3A743ADE5AB}" name="artiphon">
+            <GROUP id="{5E7183E6-F3A2-3545-D6A9-61233C5B4C9D}" name="juce_serial">
+              <FILE id="HK9N8D" name="UsbSerialHelper.java" compile="0" resource="1"
+                    file="Source/usb/com/artiphon/juce_serial/UsbSerialHelper.java"/>
+            </GROUP>
+          </GROUP>
+        </GROUP>
+        <GROUP id="{79F9DD5E-8491-C275-7135-71696A8A254D}" name="submodules">
+          <GROUP id="{9E10C80F-977B-5527-AA2A-59CF10E03F73}" name="usb-serial-for-android"/>
+        </GROUP>
+        <FILE id="th0Dz0" name="juce_serialport.h" compile="0" resource="0"
+              file="Source/usb/juce_serialport.h"/>
+        <FILE id="SB84IR" name="juce_serialport_Android.cpp" compile="1" resource="0"
+              file="Source/usb/juce_serialport_Android.cpp"/>
+        <FILE id="KIQNzb" name="juce_serialport_iOS.cpp" compile="1" resource="0"
+              file="Source/usb/juce_serialport_iOS.cpp"/>
+        <FILE id="daMvB7" name="juce_serialport_OSX.cpp" compile="1" resource="0"
+              file="Source/usb/juce_serialport_OSX.cpp"/>
+        <FILE id="e4JalA" name="juce_serialport_Windows.cpp" compile="1" resource="0"
+              file="Source/usb/juce_serialport_Windows.cpp"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Serial Monitor"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Serial Monitor"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
